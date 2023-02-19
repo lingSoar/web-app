@@ -1,0 +1,119 @@
+.search {
+  section {
+    display: flex;
+    justify-content: center;
+    transform: translateY(70px);
+
+    .content {
+      &>h2 {
+        margin: 30px 0 25px 10px;
+        font-weight: 300;
+      }
+
+      .card-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .item {
+          box-sizing: border-box;
+          width: 200px;
+          margin: 10px;
+
+          .card-box {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            min-width: 200px;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+
+            &>div:first-of-type {
+              flex: 1;
+              width: 100%;
+              padding: 16px;
+
+              h2 {
+                width: 100%;
+                font-weight: 600;
+                font-size: 23px;
+                color: #333;
+              }
+
+              h3 {
+                font-weight: normal;
+                font-size: 14px;
+                color: #aba9a9;
+                padding: 10px 0 20px 0;
+              }
+            }
+
+
+            &>div:last-of-type {
+              min-height: 165px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-direction: column;
+
+              &>.chart-content {
+                flex: 1;
+                width: 100%;
+              }
+
+              h3 {
+                font-weight: normal;
+                font-size: 14px;
+                color: #aba9a9;
+                line-height: 35px;
+              }
+            }
+          }
+
+          .skeleton {
+            min-width: 200px;
+
+            &-rectangular {
+              min-height: 220px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .css-1btayaq>:not(style) {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 660px) {
+  .search section .content .card-content .item {
+    width: 300px !important;
+  }
+
+  .search section .content .card-content .item .skeleton-rectangular {
+    height: 330px !important;
+  }
+
+  .chart {
+    min-height: 195px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .search section .content .card-content .item {
+    width: 400px !important;
+  }
+
+  .search section .content .card-content .item .skeleton-rectangular {
+    height: 440px !important;
+  }
+
+  .chart {
+    min-height: 260px;
+  }
+}

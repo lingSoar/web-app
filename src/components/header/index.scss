@@ -1,0 +1,77 @@
+header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  background-color: rgb(249, 246, 233);
+  z-index: 99;
+
+  .title {
+    display: flex;
+    margin-left: 30px;
+    width: 160px;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .title::before {
+    content: "Best";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .title::after {
+    content: "Search";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 65px;
+    font-weight: normal;
+    color: #3f3f3f;
+  }
+
+  .search {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+
+    .MuiFormControl-root {
+      transform: translateY(8px);
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  header>.title {
+    background-color: #000;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  header>.title::before {
+    content: "ST";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    color: #fff;
+    font-family: fangsong;
+  }
+
+  header>.title::after {
+    content: "";
+  }
+}

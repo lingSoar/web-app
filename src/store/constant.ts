@@ -1,0 +1,6 @@
+export const SET_SEARCH_KEY = "SET_SEARCH_KEY"
+export const SET_SEARCH_DATA = "SET_SEARCH_DATA"
+export const INIT_SEARCH_KEY = "INIT_SEARCH_KEY"
+export const SET_LOADING = "SET_LOADING"
+
+export const SEARCH_KEY = "SEARCH_KEY"
